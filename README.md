@@ -22,11 +22,13 @@ from pprint import pprint
 
 ```python
 # username and password data
+# NOTE: to avoid displaying personal information as raw text,
+# you can add these data into a .py file (for this code it is authData.py)
 data = {'username':USERNAME, 'password':PASSWORD}
 # set up header with token
 headers = {'Token':TOKEN}
 # alation instance information
-alationInstance = 'https://professionalsvcs.trialalation.com/'
+alationInstance = INSTANCE
 ```
 
 
@@ -103,8 +105,3 @@ pprint(articles[0])
      'ts_updated': '2018-10-10T23:14:11.873013Z',
      'url': '/article/1/welcome-to-alation'}
 
-
-
-```python
-
-```
